@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #202124;
+  margin: 0;
+  font-family: "Roboto", serif;
+  color: #e8eaed;
+}
+.roboto-regular {
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.container {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.doodleImg {
+  width: 100%;
+  max-width: 400px;
+}
+.search-menu{
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+}
+.search-bar {
+  border: 2px solid rgba(95, 99, 104, 1);
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  padding: 0px 25px;
+  gap: 10px;
+}
+.search-bar:hover,
+.search-bar:focus-within {
+  background-color: #303134;
+  border-color: #303134;
+  box-shadow: 0px 6px 4px 2px rgba(31, 32, 34, 1);
+  
+}
+.search-bar:focus-within{
+  border-radius: 24px 24px 0 0;
+
+}
+
+.search-bar input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+  padding-block: 15px;
+  text-decoration-skip-ink: none;
+  font-family: inherit;
+  color: inherit;
+}
+.search-bar img {
+  width: 15px;
+}
+.close-icon {
+  display: none;
+}
+.search-bar:focus-within .close-icon {
+  display: block;
+}
+.search-bar:focus-within .suggestion-menu {
+  display: block;
+
+}
+.suggestion-menu {
+  border-radius: 0 0 24px 24px;
+  border: 2px solid #303134;
+  background-color: #303134;
+  box-shadow: 0px 6px 4px 2px #1f2022;
+  display: none;
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+}
+.search-bar:focus-within + .suggestion-menu{
+    display: block;
+}
+.border-line{
+    border: thin solid #5F6368;
+
+}
+.suggestion-menu p{
+    cursor: pointer;
+    padding: 0px 20px;
+    width: 100%;
+}
+.suggestion-menu p:hover{
+    background-color: #3b4043;
+}
+.doodle-shape{
+    position: fixed;
+    right: 10px;
+    bottom: 0;
+}
+span{
+    display: flex;
+    align-items: center;
+}
+span img {
+    width: 25px;
+    padding-left: 10px;
+  }
